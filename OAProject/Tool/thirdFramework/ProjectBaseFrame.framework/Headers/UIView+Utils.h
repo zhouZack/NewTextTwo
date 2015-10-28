@@ -148,4 +148,9 @@
 //添加透明层
 - (void)createAlpaha:(CGFloat)alpha;
 
+//抖动动画  1为上下  0为左右抖动
+- (void)locaAnimationWithType:(NSInteger)type rados:(CGFloat)rados repeatCount:(NSInteger)repeatCount duration:(CFTimeInterval)duration;
+
+//抖动动画
+- (void)jitterAnimationWithRotation:(CGFloat)rotation;
 @end

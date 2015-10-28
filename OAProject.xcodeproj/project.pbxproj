@@ -15,8 +15,8 @@
 		15E04F441BDF6CF000DBBDA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E04F421BDF6CF000DBBDA9 /* LaunchScreen.storyboard */; };
 		15E04F4F1BDF6CF000DBBDA9 /* OAProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F4E1BDF6CF000DBBDA9 /* OAProjectTests.m */; };
 		15E04F5A1BDF6CF000DBBDA9 /* OAProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F591BDF6CF000DBBDA9 /* OAProjectUITests.m */; };
-		15E04F731BE0662A00DBBDA9 /* ProjectBaseFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E04F701BE0662A00DBBDA9 /* ProjectBaseFrame.framework */; };
 		15E04F771BE0667400DBBDA9 /* OAGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F761BE0667400DBBDA9 /* OAGlobal.m */; };
+		15E04F791BE0A7E900DBBDA9 /* ProjectBaseFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		15E04F551BDF6CF000DBBDA9 /* OAProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E04F591BDF6CF000DBBDA9 /* OAProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAProjectUITests.m; sourceTree = "<group>"; };
 		15E04F5B1BDF6CF000DBBDA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15E04F701BE0662A00DBBDA9 /* ProjectBaseFrame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProjectBaseFrame.framework; sourceTree = "<group>"; };
 		15E04F741BE0663500DBBDA9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		15E04F751BE0667400DBBDA9 /* OAGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGlobal.h; sourceTree = "<group>"; };
 		15E04F761BE0667400DBBDA9 /* OAGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAGlobal.m; sourceTree = "<group>"; };
+		15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProjectBaseFrame.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E04F731BE0662A00DBBDA9 /* ProjectBaseFrame.framework in Frameworks */,
+				15E04F791BE0A7E900DBBDA9 /* ProjectBaseFrame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +172,7 @@
 		15E04F6F1BE0662A00DBBDA9 /* thirdFramework */ = {
 			isa = PBXGroup;
 			children = (
-				15E04F701BE0662A00DBBDA9 /* ProjectBaseFrame.framework */,
+				15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */,
 			);
 			path = thirdFramework;
 			sourceTree = "<group>";
@@ -415,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -453,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

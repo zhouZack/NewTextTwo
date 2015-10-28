@@ -25,7 +25,6 @@
     
     UIView *circle = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width - 50, 0)];
     circle.height = circle.width;
-//    circle.layer.cornerRadius = circle.width / 2;
     circle.centerX = self.view.width / 2;
     circle.top = 30;
     circle.userInteractionEnabled = YES;
@@ -42,28 +41,8 @@
 
 - (void)jitterAnimation
 {
-    
-    CGAffineTransform t1 = CGAffineTransformMakeRotation(0.03);
-    CGAffineTransform t2 = CGAffineTransformMakeRotation(-0.03);
-    _circle.transform = t1;
-    [UIView animateWithDuration:0.1 delay:0.0 options:UIViewAnimationOptionAutoreverse|UIViewAnimationOptionRepeat animations:^{
-        //[UIView setAnimationRepeatCount:12.0];
-        _circle.transform = t2;
-    } completion:^(BOOL finished){
-        
-        [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^
-         {
-             CGAffineTransform t = CGAffineTransformMakeScale(1,1);
-             for (UIView * view in self.view.subviews)
-             {
-                 view.tag = 0;
-                 view.transform = t;
-             }
-         } completion:^(BOOL finished)
-         {
-             NSLog(@"完成");
-         }];
-    }];
+//    [_circle locaAnimationWithType:2 rados:5 repeatCount:5 duration:0];
+//    [_circle jitterAnimationWithRotation:0];
 }
 
 
