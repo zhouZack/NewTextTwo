@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CD4C9B25-C786-4139-B866-D362FABA5ECB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>18D7E6E43597E5857F73904F33E3838BE7CD4802</key>
+		<string>localhost:repositories/oaproject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OAProject.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>18D7E6E43597E5857F73904F33E3838BE7CD4802</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>localhost:repositories/oaproject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>18D7E6E43597E5857F73904F33E3838BE7CD4802</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>18D7E6E43597E5857F73904F33E3838BE7CD4802</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OAProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>
