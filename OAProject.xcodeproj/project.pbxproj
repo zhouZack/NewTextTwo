@@ -110,7 +110,6 @@
 			children = (
 				15E04F6D1BE0662A00DBBDA9 /* Customer */,
 				15E04F6E1BE0662A00DBBDA9 /* Tool */,
-				15E04F711BE0662A00DBBDA9 /* UIView */,
 				15E04F721BE0662A00DBBDA9 /* UIViewController */,
 				15E04F371BDF6CF000DBBDA9 /* AppDelegate.h */,
 				15E04F381BDF6CF000DBBDA9 /* AppDelegate.m */,
@@ -175,13 +174,6 @@
 				15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */,
 			);
 			path = thirdFramework;
-			sourceTree = "<group>";
-		};
-		15E04F711BE0662A00DBBDA9 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UIView;
 			sourceTree = "<group>";
 		};
 		15E04F721BE0662A00DBBDA9 /* UIViewController */ = {
