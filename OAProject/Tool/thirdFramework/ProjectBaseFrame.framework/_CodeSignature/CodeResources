@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/PBCategroyHelper.h</key>
 		<data>
-		RXVwmAUDdQoFte7NBLSDJ9PP+ko=
+		2FbncxOYNGRPcPrxa58zwyElNQo=
 		</data>
 		<key>Headers/ProjectBaseFrame.h</key>
 		<data>
@@ -91,6 +91,10 @@
 		<key>Headers/UIImage+Extension.h</key>
 		<data>
 		VBJMgTS6cB7T3c9D6dMNmZQ0wdE=
+		</data>
+		<key>Headers/UIImageView+Extension.h</key>
+		<data>
+		D59k+UZ9H3MkkE25xcRFT5KdK8E=
 		</data>
 		<key>Headers/UILabel+Base.h</key>
 		<data>
@@ -197,7 +201,7 @@
 		</data>
 		<key>Headers/PBCategroyHelper.h</key>
 		<data>
-		RXVwmAUDdQoFte7NBLSDJ9PP+ko=
+		2FbncxOYNGRPcPrxa58zwyElNQo=
 		</data>
 		<key>Headers/ProjectBaseFrame.h</key>
 		<data>
@@ -234,6 +238,10 @@
 		<key>Headers/UIImage+Extension.h</key>
 		<data>
 		VBJMgTS6cB7T3c9D6dMNmZQ0wdE=
+		</data>
+		<key>Headers/UIImageView+Extension.h</key>
+		<data>
+		D59k+UZ9H3MkkE25xcRFT5KdK8E=
 		</data>
 		<key>Headers/UILabel+Base.h</key>
 		<data>

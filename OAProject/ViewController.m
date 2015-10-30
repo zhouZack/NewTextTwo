@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "OABottomView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,7 @@
 @property (nonatomic, strong) NSMutableArray *backBtnArray;
 @property (nonatomic, strong) NSMutableArray *frontBtnArray;
 @property (nonatomic, strong) NSNumber *timer;
-
+@property (nonatomic, strong) OABottomView *bottomView;
 @end
 
 @implementation ViewController
@@ -27,7 +28,7 @@
     if (IOSVersion(7.0)) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
     }
-    NSArray *circleSize = @[NSStringFromCGSize(CGSizeMake(self.view.width / 4, self.view.width / 4)),NSStringFromCGSize(CGSizeMake(60, 60)),NSStringFromCGSize(CGSizeMake(60, 60)),NSStringFromCGSize(CGSizeMake(80, 80)),NSStringFromCGSize(CGSizeMake(80, 80))];
+    NSArray *circleSize = @[NSStringFromCGSize(CGSizeMake(self.view.width / 4, self.view.width / 4)),NSStringFromCGSize(CGSizeMake(80, 80)),NSStringFromCGSize(CGSizeMake(60, 60)),NSStringFromCGSize(CGSizeMake(70, 70)),NSStringFromCGSize(CGSizeMake(90, 90))];
     CGPoint centerPoint = CGPointZero;
     _circleArray = [[NSMutableArray alloc] init];
     _backBtnArray = [[NSMutableArray alloc] init];
@@ -60,21 +61,21 @@
             {
                 circle.centerX = centerPoint.x - 60 * widthFloat;
                 circle.centerY = centerPoint.y - 60 * heightFloat;
-                circle.backgroundColor = [UIColor purpleColor];
+                circle.backgroundColor = [UIColor colorWithHex:@"6d99d8"];
                 break;
             }
             case 2:
             {
                 circle.centerX = centerPoint.x + 60 * widthFloat;
                 circle.centerY = centerPoint.y - 90 * heightFloat;
-                circle.backgroundColor = [UIColor blackColor];
+                circle.backgroundColor = [UIColor colorWithHex:@"bad2ee"];
                 break;
             }
             case 3:
             {
                 circle.centerX = centerPoint.x - 70 * widthFloat;
                 circle.centerY = centerPoint.y + 80 * heightFloat;
-                circle.backgroundColor = [UIColor yellowColor];
+                circle.backgroundColor = [UIColor colorWithHex:@"6d99d8"];
                 break;
             }
             case 4:
@@ -82,7 +83,7 @@
                 
                 circle.centerX = centerPoint.x + 100 * widthFloat;
                 circle.centerY = centerPoint.y + 100 * heightFloat;
-                circle.backgroundColor = [UIColor orangeColor];
+                circle.backgroundColor = [UIColor colorWithHex:@"bad2ee"];
                 break;
             }
                 
@@ -106,6 +107,20 @@
     jitterBtn.size = self.view.size;
     [jitterBtn addTarget:self action:@selector(jitterAnimation) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:jitterBtn];
+    [self jitterAnimation];
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 5; i ++) {
+        [tempArray addObject:@{@"title":@"职业规划",@"imageName":@"icon"}];
+    }
+    _bottomView = [[OABottomView alloc] initWithFrame:CGRectZero];
+    _bottomView.size = CGSizeMake(self.view.width , 200);
+    _bottomView.bottom = self.view.height;
+    _bottomView.backgroundColor = [UIColor purpleColor];
+    _bottomView.infoDatas = tempArray;
+    _bottomView.touchBlock = ^(NSInteger index) {
+        NSLog(@"%ld",index);
+    };
+    [self.view addSubview:_bottomView];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -158,6 +173,7 @@
     } else {
         index = sender.tag;
         backView = _backBtnArray[index];
+        [self performSelector:@selector(touchEvent:) withObject:backView afterDelay:2];
     }
      [UIView transitionFromView:sender toView:backView duration:0.5f options:UIViewAnimationOptionTransitionFlipFromLeft completion:NULL];
 }
@@ -178,15 +194,6 @@
         index ++;
         [self performSelector:@selector(setTimer:) withObject:[NSNumber numberWithInteger:index] afterDelay:1];
     }
-}
-
-
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

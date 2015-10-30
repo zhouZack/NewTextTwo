@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15DAAA6E1BE3001F000FF1B6 /* OABottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DAAA6D1BE3001F000FF1B6 /* OABottomView.m */; };
+		15DAAA711BE30076000FF1B6 /* OAAppInfoBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DAAA701BE30076000FF1B6 /* OAAppInfoBtn.m */; };
+		15DAAA771BE3081A000FF1B6 /* ProjectBaseFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15DAAA761BE3081A000FF1B6 /* ProjectBaseFrame.framework */; };
 		15E04F361BDF6CF000DBBDA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F351BDF6CF000DBBDA9 /* main.m */; };
 		15E04F391BDF6CF000DBBDA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F381BDF6CF000DBBDA9 /* AppDelegate.m */; };
 		15E04F3C1BDF6CF000DBBDA9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F3B1BDF6CF000DBBDA9 /* ViewController.m */; };
@@ -16,7 +19,8 @@
 		15E04F4F1BDF6CF000DBBDA9 /* OAProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F4E1BDF6CF000DBBDA9 /* OAProjectTests.m */; };
 		15E04F5A1BDF6CF000DBBDA9 /* OAProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F591BDF6CF000DBBDA9 /* OAProjectUITests.m */; };
 		15E04F771BE0667400DBBDA9 /* OAGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F761BE0667400DBBDA9 /* OAGlobal.m */; };
-		15E04F791BE0A7E900DBBDA9 /* ProjectBaseFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */; };
+		15FA246E1BE3444B000CDBD8 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15FA246D1BE3444B000CDBD8 /* icon@2x.png */; };
+		15FA24701BE36529000CDBD8 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15FA246F1BE36529000CDBD8 /* arrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15DAAA6C1BE3001F000FF1B6 /* OABottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OABottomView.h; sourceTree = "<group>"; };
+		15DAAA6D1BE3001F000FF1B6 /* OABottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OABottomView.m; sourceTree = "<group>"; };
+		15DAAA6F1BE30076000FF1B6 /* OAAppInfoBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAppInfoBtn.h; sourceTree = "<group>"; };
+		15DAAA701BE30076000FF1B6 /* OAAppInfoBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAppInfoBtn.m; sourceTree = "<group>"; };
+		15DAAA761BE3081A000FF1B6 /* ProjectBaseFrame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProjectBaseFrame.framework; sourceTree = "<group>"; };
 		15E04F311BDF6CF000DBBDA9 /* OAProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OAProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E04F351BDF6CF000DBBDA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15E04F371BDF6CF000DBBDA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,7 +65,8 @@
 		15E04F741BE0663500DBBDA9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		15E04F751BE0667400DBBDA9 /* OAGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGlobal.h; sourceTree = "<group>"; };
 		15E04F761BE0667400DBBDA9 /* OAGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAGlobal.m; sourceTree = "<group>"; };
-		15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProjectBaseFrame.framework; sourceTree = "<group>"; };
+		15FA246D1BE3444B000CDBD8 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		15FA246F1BE36529000CDBD8 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15E04F791BE0A7E900DBBDA9 /* ProjectBaseFrame.framework in Frameworks */,
+				15DAAA771BE3081A000FF1B6 /* ProjectBaseFrame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +95,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15DAAA6B1BE3000D000FF1B6 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				15DAAA6C1BE3001F000FF1B6 /* OABottomView.h */,
+				15DAAA6D1BE3001F000FF1B6 /* OABottomView.m */,
+				15DAAA6F1BE30076000FF1B6 /* OAAppInfoBtn.h */,
+				15DAAA701BE30076000FF1B6 /* OAAppInfoBtn.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		15E04F281BDF6CF000DBBDA9 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +129,7 @@
 		15E04F331BDF6CF000DBBDA9 /* OAProject */ = {
 			isa = PBXGroup;
 			children = (
+				15DAAA6B1BE3000D000FF1B6 /* UIView */,
 				15E04F6D1BE0662A00DBBDA9 /* Customer */,
 				15E04F6E1BE0662A00DBBDA9 /* Tool */,
 				15E04F721BE0662A00DBBDA9 /* UIViewController */,
@@ -127,6 +149,7 @@
 		15E04F341BDF6CF000DBBDA9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				15FA246C1BE3437D000CDBD8 /* Resource */,
 				15E04F351BDF6CF000DBBDA9 /* main.m */,
 				15E04F741BE0663500DBBDA9 /* PrefixHeader.pch */,
 			);
@@ -171,7 +194,7 @@
 		15E04F6F1BE0662A00DBBDA9 /* thirdFramework */ = {
 			isa = PBXGroup;
 			children = (
-				15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */,
+				15DAAA761BE3081A000FF1B6 /* ProjectBaseFrame.framework */,
 			);
 			path = thirdFramework;
 			sourceTree = "<group>";
@@ -181,6 +204,15 @@
 			children = (
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		15FA246C1BE3437D000CDBD8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				15FA246F1BE36529000CDBD8 /* arrow@2x.png */,
+				15FA246D1BE3444B000CDBD8 /* icon@2x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +277,7 @@
 		15E04F291BDF6CF000DBBDA9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = OA;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Josh.Shron;
 				TargetAttributes = {
@@ -287,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15E04F441BDF6CF000DBBDA9 /* LaunchScreen.storyboard in Resources */,
+				15FA24701BE36529000CDBD8 /* arrow@2x.png in Resources */,
+				15FA246E1BE3444B000CDBD8 /* icon@2x.png in Resources */,
 				15E04F411BDF6CF000DBBDA9 /* Assets.xcassets in Resources */,
 				15E04F3F1BDF6CF000DBBDA9 /* Main.storyboard in Resources */,
 			);
@@ -313,10 +348,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DAAA711BE30076000FF1B6 /* OAAppInfoBtn.m in Sources */,
 				15E04F3C1BDF6CF000DBBDA9 /* ViewController.m in Sources */,
 				15E04F391BDF6CF000DBBDA9 /* AppDelegate.m in Sources */,
 				15E04F771BE0667400DBBDA9 /* OAGlobal.m in Sources */,
 				15E04F361BDF6CF000DBBDA9 /* main.m in Sources */,
+				15DAAA6E1BE3001F000FF1B6 /* OABottomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

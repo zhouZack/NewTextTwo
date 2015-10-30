@@ -24,5 +24,6 @@
 #import "UIColor+Project.h"
 #import "UIImage+Extension.h"
 #import "UIAlertView+Extension.h"
+#import "UIImageView+Extension.h"
 
 #endif
