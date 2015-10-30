@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface BestPayView : UIView
-
+@property (nonatomic, weak) IBOutlet UILabel *acount;
+- (IBAction)changeAcountNO:(id)sender;
 @end

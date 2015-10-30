@@ -1,14 +1,14 @@
 //
-//  BestPayView.m
+//  BasicInfoView.m
 //  OAProject
 //
-//  Created by 尹鹏 on 10/28/15.
+//  Created by 尹鹏 on 10/29/15.
 //  Copyright © 2015 Josh.Shron. All rights reserved.
 //
 
-#import "BestPayView.h"
+#import "BasicInfoView.h"
 
-@implementation BestPayView
+@implementation BasicInfoView
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -18,6 +18,4 @@
 }
 */
 
-- (IBAction)changeAcountNO:(id)sender {
-}
 @end
