@@ -19,21 +19,14 @@
 		15E04F4F1BDF6CF000DBBDA9 /* OAProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F4E1BDF6CF000DBBDA9 /* OAProjectTests.m */; };
 		15E04F5A1BDF6CF000DBBDA9 /* OAProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F591BDF6CF000DBBDA9 /* OAProjectUITests.m */; };
 		15E04F771BE0667400DBBDA9 /* OAGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F761BE0667400DBBDA9 /* OAGlobal.m */; };
-<<<<<<< HEAD
 		15FA246E1BE3444B000CDBD8 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15FA246D1BE3444B000CDBD8 /* icon@2x.png */; };
 		15FA24701BE36529000CDBD8 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15FA246F1BE36529000CDBD8 /* arrow@2x.png */; };
-=======
-		15E04F791BE0A7E900DBBDA9 /* ProjectBaseFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */; };
-		71540D281BE0BECD007428BD /* BestPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71540D271BE0BECD007428BD /* BestPayView.m */; settings = {ASSET_TAGS = (); }; };
-		71540D2A1BE0BEE9007428BD /* BestPayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71540D291BE0BEE9007428BD /* BestPayView.xib */; settings = {ASSET_TAGS = (); }; };
-<<<<<<< HEAD
->>>>>>> 1fc5350... add bestbuyView
-=======
-		71540D361BE21782007428BD /* BestPayAbsentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71540D351BE21782007428BD /* BestPayAbsentView.xib */; settings = {ASSET_TAGS = (); }; };
-		71540D391BE217D0007428BD /* BestPayAbentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71540D381BE217D0007428BD /* BestPayAbentView.m */; settings = {ASSET_TAGS = (); }; };
-		71540D3E1BE21BF3007428BD /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71540D3D1BE21BF3007428BD /* BasicInfoView.xib */; settings = {ASSET_TAGS = (); }; };
-		71540D411BE21C1D007428BD /* BasicInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 71540D401BE21C1D007428BD /* BasicInfoView.m */; settings = {ASSET_TAGS = (); }; };
->>>>>>> fb43ea9... update
+		15FA247A1BE36FD7000CDBD8 /* BasicInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FA24721BE36FD7000CDBD8 /* BasicInfoView.m */; };
+		15FA247B1BE36FD7000CDBD8 /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FA24731BE36FD7000CDBD8 /* BasicInfoView.xib */; };
+		15FA247C1BE36FD7000CDBD8 /* BestPayAbentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FA24751BE36FD7000CDBD8 /* BestPayAbentView.m */; };
+		15FA247D1BE36FD7000CDBD8 /* BestPayAbsentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FA24761BE36FD7000CDBD8 /* BestPayAbsentView.xib */; };
+		15FA247E1BE36FD7000CDBD8 /* BestPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FA24781BE36FD7000CDBD8 /* BestPayView.m */; };
+		15FA247F1BE36FD7000CDBD8 /* BestPayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FA24791BE36FD7000CDBD8 /* BestPayView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,24 +71,17 @@
 		15E04F741BE0663500DBBDA9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		15E04F751BE0667400DBBDA9 /* OAGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGlobal.h; sourceTree = "<group>"; };
 		15E04F761BE0667400DBBDA9 /* OAGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAGlobal.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		15FA246D1BE3444B000CDBD8 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		15FA246F1BE36529000CDBD8 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
-=======
-		15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProjectBaseFrame.framework; sourceTree = "<group>"; };
-		71540D261BE0BECD007428BD /* BestPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestPayView.h; sourceTree = "<group>"; };
-		71540D271BE0BECD007428BD /* BestPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestPayView.m; sourceTree = "<group>"; };
-		71540D291BE0BEE9007428BD /* BestPayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestPayView.xib; sourceTree = "<group>"; };
-<<<<<<< HEAD
->>>>>>> 1fc5350... add bestbuyView
-=======
-		71540D351BE21782007428BD /* BestPayAbsentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestPayAbsentView.xib; sourceTree = "<group>"; };
-		71540D371BE217D0007428BD /* BestPayAbentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestPayAbentView.h; sourceTree = "<group>"; };
-		71540D381BE217D0007428BD /* BestPayAbentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestPayAbentView.m; sourceTree = "<group>"; };
-		71540D3D1BE21BF3007428BD /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
-		71540D3F1BE21C1D007428BD /* BasicInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicInfoView.h; sourceTree = "<group>"; };
-		71540D401BE21C1D007428BD /* BasicInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicInfoView.m; sourceTree = "<group>"; };
->>>>>>> fb43ea9... update
+		15FA24711BE36FD7000CDBD8 /* BasicInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicInfoView.h; sourceTree = "<group>"; };
+		15FA24721BE36FD7000CDBD8 /* BasicInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicInfoView.m; sourceTree = "<group>"; };
+		15FA24731BE36FD7000CDBD8 /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
+		15FA24741BE36FD7000CDBD8 /* BestPayAbentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestPayAbentView.h; sourceTree = "<group>"; };
+		15FA24751BE36FD7000CDBD8 /* BestPayAbentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestPayAbentView.m; sourceTree = "<group>"; };
+		15FA24761BE36FD7000CDBD8 /* BestPayAbsentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestPayAbsentView.xib; sourceTree = "<group>"; };
+		15FA24771BE36FD7000CDBD8 /* BestPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestPayView.h; sourceTree = "<group>"; };
+		15FA24781BE36FD7000CDBD8 /* BestPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestPayView.m; sourceTree = "<group>"; };
+		15FA24791BE36FD7000CDBD8 /* BestPayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestPayView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,15 +234,15 @@
 		71540D251BE0BC02007428BD /* PersonnalInfo */ = {
 			isa = PBXGroup;
 			children = (
-				71540D261BE0BECD007428BD /* BestPayView.h */,
-				71540D271BE0BECD007428BD /* BestPayView.m */,
-				71540D291BE0BEE9007428BD /* BestPayView.xib */,
-				71540D371BE217D0007428BD /* BestPayAbentView.h */,
-				71540D381BE217D0007428BD /* BestPayAbentView.m */,
-				71540D351BE21782007428BD /* BestPayAbsentView.xib */,
-				71540D3F1BE21C1D007428BD /* BasicInfoView.h */,
-				71540D401BE21C1D007428BD /* BasicInfoView.m */,
-				71540D3D1BE21BF3007428BD /* BasicInfoView.xib */,
+				15FA24711BE36FD7000CDBD8 /* BasicInfoView.h */,
+				15FA24721BE36FD7000CDBD8 /* BasicInfoView.m */,
+				15FA24731BE36FD7000CDBD8 /* BasicInfoView.xib */,
+				15FA24741BE36FD7000CDBD8 /* BestPayAbentView.h */,
+				15FA24751BE36FD7000CDBD8 /* BestPayAbentView.m */,
+				15FA24761BE36FD7000CDBD8 /* BestPayAbsentView.xib */,
+				15FA24771BE36FD7000CDBD8 /* BestPayView.h */,
+				15FA24781BE36FD7000CDBD8 /* BestPayView.m */,
+				15FA24791BE36FD7000CDBD8 /* BestPayView.xib */,
 			);
 			name = PersonnalInfo;
 			sourceTree = "<group>";
@@ -367,12 +353,12 @@
 			files = (
 				15E04F441BDF6CF000DBBDA9 /* LaunchScreen.storyboard in Resources */,
 				15FA24701BE36529000CDBD8 /* arrow@2x.png in Resources */,
+				15FA247D1BE36FD7000CDBD8 /* BestPayAbsentView.xib in Resources */,
+				15FA247F1BE36FD7000CDBD8 /* BestPayView.xib in Resources */,
 				15FA246E1BE3444B000CDBD8 /* icon@2x.png in Resources */,
+				15FA247B1BE36FD7000CDBD8 /* BasicInfoView.xib in Resources */,
 				15E04F411BDF6CF000DBBDA9 /* Assets.xcassets in Resources */,
 				15E04F3F1BDF6CF000DBBDA9 /* Main.storyboard in Resources */,
-				71540D3E1BE21BF3007428BD /* BasicInfoView.xib in Resources */,
-				71540D361BE21782007428BD /* BestPayAbsentView.xib in Resources */,
-				71540D2A1BE0BEE9007428BD /* BestPayView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,11 +385,11 @@
 			files = (
 				15DAAA711BE30076000FF1B6 /* OAAppInfoBtn.m in Sources */,
 				15E04F3C1BDF6CF000DBBDA9 /* ViewController.m in Sources */,
+				15FA247C1BE36FD7000CDBD8 /* BestPayAbentView.m in Sources */,
 				15E04F391BDF6CF000DBBDA9 /* AppDelegate.m in Sources */,
-				71540D281BE0BECD007428BD /* BestPayView.m in Sources */,
-				71540D411BE21C1D007428BD /* BasicInfoView.m in Sources */,
+				15FA247A1BE36FD7000CDBD8 /* BasicInfoView.m in Sources */,
+				15FA247E1BE36FD7000CDBD8 /* BestPayView.m in Sources */,
 				15E04F771BE0667400DBBDA9 /* OAGlobal.m in Sources */,
-				71540D391BE217D0007428BD /* BestPayAbentView.m in Sources */,
 				15E04F361BDF6CF000DBBDA9 /* main.m in Sources */,
 				15DAAA6E1BE3001F000FF1B6 /* OABottomView.m in Sources */,
 			);
