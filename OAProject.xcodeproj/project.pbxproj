@@ -19,16 +19,7 @@
 		15E04F4F1BDF6CF000DBBDA9 /* OAProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F4E1BDF6CF000DBBDA9 /* OAProjectTests.m */; };
 		15E04F5A1BDF6CF000DBBDA9 /* OAProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F591BDF6CF000DBBDA9 /* OAProjectUITests.m */; };
 		15E04F771BE0667400DBBDA9 /* OAGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04F761BE0667400DBBDA9 /* OAGlobal.m */; };
-<<<<<<< HEAD
-		15FA246E1BE3444B000CDBD8 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15FA246D1BE3444B000CDBD8 /* icon@2x.png */; };
-		15FA24701BE36529000CDBD8 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15FA246F1BE36529000CDBD8 /* arrow@2x.png */; };
-		15FA247A1BE36FD7000CDBD8 /* BasicInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FA24721BE36FD7000CDBD8 /* BasicInfoView.m */; };
-		15FA247B1BE36FD7000CDBD8 /* BasicInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FA24731BE36FD7000CDBD8 /* BasicInfoView.xib */; };
-		15FA247C1BE36FD7000CDBD8 /* BestPayAbentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FA24751BE36FD7000CDBD8 /* BestPayAbentView.m */; };
-		15FA247D1BE36FD7000CDBD8 /* BestPayAbsentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FA24761BE36FD7000CDBD8 /* BestPayAbsentView.xib */; };
-		15FA247E1BE36FD7000CDBD8 /* BestPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FA24781BE36FD7000CDBD8 /* BestPayView.m */; };
-		15FA247F1BE36FD7000CDBD8 /* BestPayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15FA24791BE36FD7000CDBD8 /* BestPayView.xib */; };
-=======
+
 		15E04F791BE0A7E900DBBDA9 /* ProjectBaseFrame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */; };
 		180540161BE9FEB8009ED3CA /* AskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180540151BE9FEB8009ED3CA /* AskViewController.m */; settings = {ASSET_TAGS = (); }; };
 		180F0AB41BE709AC00EE1CAD /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 180F0AB31BE709AC00EE1CAD /* UIButton+Extension.m */; settings = {ASSET_TAGS = (); }; };
@@ -39,7 +30,6 @@
 		1889FEDA1BE85A9900073B3B /* SquareTableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1889FED51BE85A9900073B3B /* SquareTableControl.m */; settings = {ASSET_TAGS = (); }; };
 		1889FEDE1BE85B3800073B3B /* MyQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1889FEDD1BE85B3800073B3B /* MyQuestionCell.m */; settings = {ASSET_TAGS = (); }; };
 		1889FEE11BE8A8EE00073B3B /* QuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1889FEE01BE8A8EE00073B3B /* QuestionDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
->>>>>>> 3d8e4f4... Update the SquareTable
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,19 +74,7 @@
 		15E04F741BE0663500DBBDA9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		15E04F751BE0667400DBBDA9 /* OAGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAGlobal.h; sourceTree = "<group>"; };
 		15E04F761BE0667400DBBDA9 /* OAGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAGlobal.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		15FA246D1BE3444B000CDBD8 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		15FA246F1BE36529000CDBD8 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
-		15FA24711BE36FD7000CDBD8 /* BasicInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicInfoView.h; sourceTree = "<group>"; };
-		15FA24721BE36FD7000CDBD8 /* BasicInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicInfoView.m; sourceTree = "<group>"; };
-		15FA24731BE36FD7000CDBD8 /* BasicInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicInfoView.xib; sourceTree = "<group>"; };
-		15FA24741BE36FD7000CDBD8 /* BestPayAbentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestPayAbentView.h; sourceTree = "<group>"; };
-		15FA24751BE36FD7000CDBD8 /* BestPayAbentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestPayAbentView.m; sourceTree = "<group>"; };
-		15FA24761BE36FD7000CDBD8 /* BestPayAbsentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestPayAbsentView.xib; sourceTree = "<group>"; };
-		15FA24771BE36FD7000CDBD8 /* BestPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestPayView.h; sourceTree = "<group>"; };
-		15FA24781BE36FD7000CDBD8 /* BestPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestPayView.m; sourceTree = "<group>"; };
-		15FA24791BE36FD7000CDBD8 /* BestPayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestPayView.xib; sourceTree = "<group>"; };
-=======
+
 		15E04F781BE0A7E900DBBDA9 /* ProjectBaseFrame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ProjectBaseFrame.framework; sourceTree = "<group>"; };
 		180540141BE9FEB8009ED3CA /* AskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AskViewController.h; sourceTree = "<group>"; };
 		180540151BE9FEB8009ED3CA /* AskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AskViewController.m; sourceTree = "<group>"; };
@@ -116,7 +94,6 @@
 		1889FEDD1BE85B3800073B3B /* MyQuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyQuestionCell.m; path = OAProject/Controller/MyQuestionCell.m; sourceTree = SOURCE_ROOT; };
 		1889FEDF1BE8A8EE00073B3B /* QuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDetailViewController.h; sourceTree = "<group>"; };
 		1889FEE01BE8A8EE00073B3B /* QuestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDetailViewController.m; sourceTree = "<group>"; };
->>>>>>> 3d8e4f4... Update the SquareTable
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,14 +159,10 @@
 				15DAAA6B1BE3000D000FF1B6 /* UIView */,
 				15E04F6D1BE0662A00DBBDA9 /* Customer */,
 				15E04F6E1BE0662A00DBBDA9 /* Tool */,
-<<<<<<< HEAD
-				15E04F721BE0662A00DBBDA9 /* UIViewController */,
-=======
 				15E04F711BE0662A00DBBDA9 /* UIView */,
 				1889FEC11BE756E600073B3B /* Model */,
 				180F0AB11BE7097C00EE1CAD /* category */,
 				1889FECF1BE85A9900073B3B /* Controller */,
->>>>>>> 3d8e4f4... Update the SquareTable
 				15E04F371BDF6CF000DBBDA9 /* AppDelegate.h */,
 				15E04F381BDF6CF000DBBDA9 /* AppDelegate.m */,
 				15E04F3A1BDF6CF000DBBDA9 /* ViewController.h */,
@@ -259,41 +232,13 @@
 		15E04F721BE0662A00DBBDA9 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				71540D251BE0BC02007428BD /* PersonnalInfo */,
-=======
 				1889FEDC1BE85B3800073B3B /* MyQuestionCell.h */,
 				1889FEDD1BE85B3800073B3B /* MyQuestionCell.m */,
->>>>>>> 3d8e4f4... Update the SquareTable
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		15FA246C1BE3437D000CDBD8 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				15FA246F1BE36529000CDBD8 /* arrow@2x.png */,
-				15FA246D1BE3444B000CDBD8 /* icon@2x.png */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		71540D251BE0BC02007428BD /* PersonnalInfo */ = {
-			isa = PBXGroup;
-			children = (
-				15FA24711BE36FD7000CDBD8 /* BasicInfoView.h */,
-				15FA24721BE36FD7000CDBD8 /* BasicInfoView.m */,
-				15FA24731BE36FD7000CDBD8 /* BasicInfoView.xib */,
-				15FA24741BE36FD7000CDBD8 /* BestPayAbentView.h */,
-				15FA24751BE36FD7000CDBD8 /* BestPayAbentView.m */,
-				15FA24761BE36FD7000CDBD8 /* BestPayAbsentView.xib */,
-				15FA24771BE36FD7000CDBD8 /* BestPayView.h */,
-				15FA24781BE36FD7000CDBD8 /* BestPayView.m */,
-				15FA24791BE36FD7000CDBD8 /* BestPayView.xib */,
-			);
-			name = PersonnalInfo;
-=======
+
 		180F0AB11BE7097C00EE1CAD /* category */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,7 +274,6 @@
 				180540151BE9FEB8009ED3CA /* AskViewController.m */,
 			);
 			path = Controller;
->>>>>>> 3d8e4f4... Update the SquareTable
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,12 +414,7 @@
 			files = (
 				15DAAA711BE30076000FF1B6 /* OAAppInfoBtn.m in Sources */,
 				15E04F3C1BDF6CF000DBBDA9 /* ViewController.m in Sources */,
-<<<<<<< HEAD
-				15FA247C1BE36FD7000CDBD8 /* BestPayAbentView.m in Sources */,
-				15E04F391BDF6CF000DBBDA9 /* AppDelegate.m in Sources */,
-				15FA247A1BE36FD7000CDBD8 /* BasicInfoView.m in Sources */,
-				15FA247E1BE36FD7000CDBD8 /* BestPayView.m in Sources */,
-=======
+
 				180540161BE9FEB8009ED3CA /* AskViewController.m in Sources */,
 				1889FEDE1BE85B3800073B3B /* MyQuestionCell.m in Sources */,
 				180F0AB41BE709AC00EE1CAD /* UIButton+Extension.m in Sources */,
@@ -484,7 +423,6 @@
 				1889FEDA1BE85A9900073B3B /* SquareTableControl.m in Sources */,
 				1889FED91BE85A9900073B3B /* MyQuestionsTableConrol.m in Sources */,
 				1889FEC41BE7572E00073B3B /* SquareModel.m in Sources */,
->>>>>>> 3d8e4f4... Update the SquareTable
 				15E04F771BE0667400DBBDA9 /* OAGlobal.m in Sources */,
 				1889FED81BE85A9900073B3B /* EmployeeService.m in Sources */,
 				1889FEC71BE7574100073B3B /* MyquestionModel.m in Sources */,
