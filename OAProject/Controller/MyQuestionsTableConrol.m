@@ -28,7 +28,7 @@
     _dateSource = [[NSMutableArray alloc] init];
     for (int i =0; i<4; i++) {
         MyquestionModel *model = [[MyquestionModel alloc] init];
-        model.title = @"做财务的能不能转去做业务员";
+        model.title = @"做财务的能不能转去做业务员?";
         model.detail = @"我是在上海集团运营支撑中心做财务管理工作，如今已经工作3年，想试试业务员的工作，挑战下自己，请问需要什么专业知识吗？";
         model.date = @"2015-10-19 15:23";
         if (i == 0) {

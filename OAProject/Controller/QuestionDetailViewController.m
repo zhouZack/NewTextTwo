@@ -9,7 +9,7 @@
 #import "QuestionDetailViewController.h"
 
 @interface QuestionDetailViewController ()
-
+@property (nonatomic, strong)NSArray*estimateBtnArray;
 @end
 
 @implementation QuestionDetailViewController
@@ -45,29 +45,37 @@
     titleLabel.text = @"对回答的评分";
     [view addSubview:titleLabel];
     
-    UIButton *centreBtn = [UIButton createButtonWithImage:nil selectImage:nil target:self action:@selector(centreBtnClick:)];
+    UIButton *leftBtn = [UIButton createButtonWithImage:@"btn2" selectImage:@"btn1" target:self action:@selector(estimateBtnClick:)];
+    leftBtn.selected = YES;
+    leftBtn.tag = 10;
+    leftBtn.top = titleLabel.bottom+20;
+    leftBtn.backgroundColor = [UIColor clearColor];
+    leftBtn.width = 20;
+    leftBtn.height=20;
+    leftBtn.centerX = ScreenWidth/5-20;
+    [view addSubview:leftBtn];
+    
+    UIButton *centreBtn = [UIButton createButtonWithImage:@"btn2" selectImage:@"btn1" target:self action:@selector(estimateBtnClick:)];
     centreBtn.top = titleLabel.bottom+20;
+    centreBtn.tag = 11;
     centreBtn.backgroundColor = [UIColor colorWithHex:@"47a8ef"];
     centreBtn.width = 20;
     centreBtn.height=20;
     centreBtn.centerX = ScreenWidth/2-20;
     [view addSubview:centreBtn];
     
-    UIButton *leftBtn = [UIButton createButtonWithImage:nil selectImage:nil target:self action:@selector(leftBtnClick:)];
-    leftBtn.top = titleLabel.bottom+20;
-    leftBtn.backgroundColor = [UIColor colorWithHex:@"47a8ef"];
-    leftBtn.width = 20;
-    leftBtn.height=20;
-    leftBtn.centerX = ScreenWidth/5-20;
-    [view addSubview:leftBtn];
-    
-    UIButton *rightBtn = [UIButton createButtonWithImage:nil selectImage:nil target:self action:@selector(rightBtnClick:)];
+
+    UIButton *rightBtn = [UIButton createButtonWithImage:@"btn2" selectImage:@"btn1" target:self action:@selector(estimateBtnClick:)];
+    rightBtn.tag = 12;
     rightBtn.top = titleLabel.bottom+20;
     rightBtn.backgroundColor = [UIColor colorWithHex:@"47a8ef"];
     rightBtn.width = 20;
     rightBtn.height=20;
     rightBtn.centerX = (ScreenWidth/5)*4-20;
     [view addSubview:rightBtn];
+    
+    self.estimateBtnArray = @[leftBtn,centreBtn,rightBtn];
+    
     
     UILabel*leftLabel = [[UILabel alloc] initWithFrame:CGRectMake(leftBtn.right, titleLabel.bottom+15, 80, 30)];
     leftLabel.font = [UIFont systemFontOfSize:14];
@@ -102,7 +110,7 @@
     
     _questionTitle = [[UILabel alloc] initWithFrame:CGRectMake(ask.right, 10, ScreenWidth-50, 20)];
     _questionTitle.textAlignment = NSTextAlignmentLeft;
-    _questionTitle.text = @"做财务的能不能转去做业务员？";
+    _questionTitle.text = self.model.title;
     [self.view addSubview:_questionTitle];
     
     _questionDetail = [[UILabel alloc] initWithFrame:CGRectMake(10, ask.bottom+10, ScreenWidth-20, 30)];
@@ -110,7 +118,7 @@
     _questionDetail.lineBreakMode = NSLineBreakByWordWrapping;
     _questionDetail.font = [UIFont systemFontOfSize:14];
     _questionDetail.textColor = [[UIColor grayColor] colorWithAlphaComponent:0.5];
-    _questionDetail.text = @"我是在上海集团运营支撑中心做财务管理工作，如今已经工作3年，想试试业务员的工作，挑战下自己，请问需要什么专业知识吗?";
+    _questionDetail.text = self.model.detail;
     CGSize size = [_questionDetail sizeThatFits:CGSizeMake(_questionDetail.width, MAXFLOAT)];
     CGRect frame = _questionDetail.frame;
     frame.size.height = size.height;
@@ -120,7 +128,7 @@
     _questionDate = [[UILabel alloc] initWithFrame:CGRectMake(10, _questionDetail.bottom+5, 120, 20)];
     _questionDate.font = [UIFont systemFontOfSize:12];
     _questionDate.textColor = [[UIColor grayColor] colorWithAlphaComponent:0.5];
-    _questionDate.text = @"2015-10-20 10:20";
+    _questionDate.text = self.model.date;
     [self.view addSubview:_questionDate];
     
     UILabel *lineLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0, _questionDate.bottom+15, ScreenWidth, 10)];
@@ -156,17 +164,16 @@
     [self.view addSubview:_answerDate];
 }
 
-- (void)rightBtnClick:(id)sender
+
+- (void)estimateBtnClick:(UIButton*)button
 {
-    NSLog(@"点击了不满意按钮");
-}
-- (void)leftBtnClick:(UIButton*)button
-{
-    NSLog(@"点击了很满意按钮");
-}
-- (void)centreBtnClick:(UIButton*)button
-{
-    NSLog(@"点击了满意");
+    for (UIButton *btn in self.estimateBtnArray) {
+        if (btn.tag == button.tag) {
+            btn.selected = YES;
+        }else{
+            btn.selected = NO;
+        }
+    }
 }
 - (void)submitBtnClick:(UIButton*)button
 {

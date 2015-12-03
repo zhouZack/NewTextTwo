@@ -45,19 +45,22 @@
     self.navigationItem.titleView = label;
     
     UIButton *rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 50)];
+    rightBtn.tag = 102;
     [rightBtn setTitle:@"提问" forState:UIControlStateNormal];
-    [rightBtn addTarget:self action:@selector(rightItem) forControlEvents:UIControlEventTouchUpInside];
+    [rightBtn addTarget:self action:@selector(ServiceBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [rightBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     UIBarButtonItem * rightItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
     self.navigationItem.rightBarButtonItem = rightItem;
 }
 - (void)reloadView
 {
-    _squareBtn = [UIButton createButtonWithFrame:CGRectMake(0, 0, self.view.width/2, 50) target:self action:@selector(squareBtnClick:) title:@"常见广场问题" selectTitle:nil titleColor:[UIColor blackColor] selectColor:[UIColor colorWithHex:@"47a8ef"]];
+    _squareBtn = [UIButton createButtonWithFrame:CGRectMake(0, 0, self.view.width/2, 50) target:self action:@selector(ServiceBtnClick:) title:@"常见广场问题" selectTitle:nil titleColor:[UIColor blackColor] selectColor:[UIColor colorWithHex:@"47a8ef"]];
     _squareBtn.selected = YES;
+    _squareBtn.tag = 100;
     [self.view addSubview:_squareBtn];
     
-    _questionBtn = [UIButton createButtonWithFrame:CGRectMake(self.view.width/2, 0, self.view.width/2, 50) target:self action:@selector(questionBtnClick:) title:@"我的提问" selectTitle:nil titleColor:[UIColor blackColor] selectColor:[UIColor colorWithHex:@"47a8ef"]];
+    _questionBtn = [UIButton createButtonWithFrame:CGRectMake(self.view.width/2, 0, self.view.width/2, 50) target:self action:@selector(ServiceBtnClick:) title:@"我的提问" selectTitle:nil titleColor:[UIColor blackColor] selectColor:[UIColor colorWithHex:@"47a8ef"]];
+    _questionBtn.tag =101;
     [self.view addSubview:_questionBtn];
     
     UILabel*label = [[UILabel alloc] initWithFrame:CGRectMake(0, _squareBtn.bottom, self.view.width, 2)];
@@ -77,49 +80,52 @@
     [self.view addSubview:_containerScroll];
     
     __weak EmployeeService *weakSelf = self;
-   //加入常见广场问题表格
     SquareTableControl *square = [[SquareTableControl alloc] initWithFrame:CGRectMake(0, 0, _containerScroll.width, _containerScroll.height)];
+    //点击广场的cell响应的事件
     square.cellBlock = ^(SquareModel*model)
     {
         NSLog(@"%@",model.title);
     };
     [_containerScroll addSubview:square];
     
-    //加入我的提问表格
+
     MyQuestionsTableConrol *question = [[MyQuestionsTableConrol alloc] initWithFrame:CGRectMake(_containerScroll.width, 0, _containerScroll.width, _containerScroll.height)];
+    //点击提问的详情按钮响应的事件
     question.cellBlock1 = ^(MyquestionModel*model)
     {
         QuestionDetailViewController *question = [[QuestionDetailViewController alloc] init];
+        question.model = model;
         [weakSelf.navigationController pushViewController:question animated:YES];
     };
     [_containerScroll addSubview:question];
     
 }
-- (void)squareBtnClick:(UIButton*)button
+//广场，我的提问，提问这三个按钮点击事件
+- (void)ServiceBtnClick:(UIButton*)button
 {
-    button.selected = YES;
-    _questionBtn.selected = NO;
-    [UIView animateWithDuration:0.5 animations:^{
-        _lineLabel.frame = CGRectMake(0, _squareBtn.bottom, _squareBtn.width, 2);
-    } completion:^(BOOL finished) {
-        _containerScroll.contentOffset = CGPointMake(0, 0);
-        
-    }];
-}
-- (void)questionBtnClick:(UIButton*)button
-{
-    button.selected = YES;
-    _squareBtn.selected = NO;
-    [UIView animateWithDuration:0.5 animations:^{
-        _lineLabel.frame = CGRectMake(_squareBtn.width, _squareBtn.bottom, _squareBtn.width, 2);
-    } completion:^(BOOL finished) {
-        _containerScroll.contentOffset = CGPointMake(self.view.width, 0);
-    }];
-}
-- (void)rightItem
-{
-    AskViewController *ask = [[AskViewController alloc] init];
-    [self.navigationController pushViewController:ask animated:YES];
+    if (button.tag == 100) {
+        button.selected = YES;
+        _questionBtn.selected = NO;
+        [UIView animateWithDuration:0.5 animations:^{
+            _lineLabel.frame = CGRectMake(0, _squareBtn.bottom, _squareBtn.width, 2);
+        } completion:^(BOOL finished) {
+            _containerScroll.contentOffset = CGPointMake(0, 0);
+            
+        }];
+    }
+    else if (button.tag == 101) {
+        button.selected = YES;
+        _squareBtn.selected = NO;
+        [UIView animateWithDuration:0.5 animations:^{
+            _lineLabel.frame = CGRectMake(_squareBtn.width, _squareBtn.bottom, _squareBtn.width, 2);
+        } completion:^(BOOL finished) {
+            _containerScroll.contentOffset = CGPointMake(self.view.width, 0);
+        }];
+    }
+    else{
+        AskViewController *ask = [[AskViewController alloc] init];
+        [self.navigationController pushViewController:ask animated:YES];
+    }
 
 }
 #pragma mark-UIScrollView代理协议

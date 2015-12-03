@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SquareModel.h"
-
+#import "MyquestionModel.h"
 @interface QuestionDetailViewController : UIViewController
 @property (nonatomic, strong)UILabel *titleLabel;
 @property (nonatomic, strong)UILabel *questionTitle;
@@ -18,6 +18,7 @@
 @property (nonatomic ,strong)UILabel *answerDetail;
 @property (nonatomic, strong)UILabel *answerDate;
 
+@property (nonatomic ,strong)MyquestionModel *model;
 
 
 
